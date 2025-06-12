@@ -3,16 +3,16 @@ from pathlib import Path
 def get_config():
     return {
         "batch_size": 20,
-        "num_epochs": 5,
+        "num_epochs": 10,
         "lr": 10**-4,
         "seq_len": 350,
         "d_model": 512,
         "datasource": 'harouzie/vi_en-translation',
         "lang_src": "English",
         "lang_tgt": "Vietnamese",
-        "model_folder": "weights",
+        "model_folder": "weights",  
         "model_basename": "tmodel_",
-        "preload": "None",
+        "preload": "latest",
         "tokenizer_file": "tokenizer_{0}.json",
         "experiment_name": "runs/tmodel"
     }
